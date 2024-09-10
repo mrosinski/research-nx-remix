@@ -57,5 +57,12 @@
       "dependsOn": ["^build"]
     }
   },
-  "defaultBase": "origin/main"
+  "defaultBase": "origin/main",
+  "generators": {
+    "@nx/react": {
+      "library": {
+        "unitTestRunner": "vitest"
+      }
+    }
+  }
 }

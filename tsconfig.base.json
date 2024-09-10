@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@research-nx-remix/libs/product-card": ["libs/product-card/src/index.ts"],
+      "@research-nx-remix/libs/product-card/server": ["libs/product-card/src/server.ts"],
+      "@research-nx-remix/libs/products-list": ["libs/products-list/src/index.ts"],
+      "@research-nx-remix/libs/products-list/server": ["libs/products-list/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
