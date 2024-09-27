@@ -15,10 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@research-nx-remix/libs/product-card": ["libs/product-card/src/index.ts"],
-      "@research-nx-remix/libs/product-card/server": ["libs/product-card/src/server.ts"],
-      "@research-nx-remix/libs/products-list": ["libs/products-list/src/index.ts"],
-      "@research-nx-remix/libs/products-list/server": ["libs/products-list/src/server.ts"]
+      "@research-nx-remix/api-get-product-by-name": ["libs/api/get-product-by-name/src/index.ts"],
+      "@research-nx-remix/api/get-product-by-id": ["libs/api/get-product-by-id/src/index.ts"],
+      "@research-nx-remix/api/infra": ["libs/api/infra/src/index.ts"],
+      "@research-nx-remix/ui-product-card": ["libs/ui/product-card/src/index.ts"],
+      "@research-nx-remix/ui-product-card/server": ["ui/product-card/src/server.ts"],
+      "@research-nx-remix/ui-products-list": ["libs/ui/products-list/src/index.ts"],
+      "@research-nx-remix/ui-products-list/server": ["libs/ui/products-list/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

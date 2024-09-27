@@ -1,4 +1,4 @@
-import { ProductsList } from '@research-nx-remix/libs/products-list'
+import { ProductsList } from '@research-nx-remix/ui-products-list'
 
 export default function Index() {
   return (

@@ -7,7 +7,10 @@
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js"
+      "!{projectRoot}/eslint.config.js",
+      "!{projectRoot}/src/test-setup.[jt]s",
+      "!{projectRoot}/test-setup.[jt]s",
+      "!{projectRoot}/jest.config.[jt]s"
     ],
     "sharedGlobals": ["{workspaceRoot}/bitbucket-pipelines.yml"]
   },
@@ -45,6 +48,29 @@
       "options": {
         "targetName": "e2e"
       }
+    },
+    {
+      "plugin": "nx-serverless-cdk/plugin",
+      "options": {
+        "cdkTargetName": "cdk",
+        "deployTargetName": "deploy",
+        "deployAllTargetName": "deploy-all",
+        "destroyTargetName": "destroy",
+        "diffTargetName": "diff",
+        "lsTargetName": "ls",
+        "synthTargetName": "synth",
+        "watchTargetName": "watch",
+        "generateEventTargetName": "generate-event",
+        "invokeTargetName": "invoke",
+        "startApiTargetName": "start-api",
+        "startLambdaTargetName": "start-lambda"
+      }
+    },
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
     }
   ],
   "targetDefaults": {
@@ -62,6 +88,11 @@
     "@nx/react": {
       "library": {
         "unitTestRunner": "vitest"
+      }
+    },
+    "@nx/node": {
+      "library": {
+        "unitTestRunner": "none"
       }
     }
   }

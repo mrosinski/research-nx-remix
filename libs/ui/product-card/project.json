@@ -1,0 +1,9 @@
+{
+  "name": "ui-product-card",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui/product-card/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project ui-product-card --web",
+  "targets": {}
+}
